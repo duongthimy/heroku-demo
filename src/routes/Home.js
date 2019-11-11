@@ -19,7 +19,7 @@ const Home = () => {
             });
     };
 
-    const visUri = `/gdc/md/${constants.projectId}/obj/89355`;
+    const visUri = `/gdc/md/${constants.projectId}/obj/75548`;
 
     return (
         <Page>

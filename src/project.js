@@ -5,5 +5,6 @@ export const sdk = factory();
 sdk.config.setCustomDomain(constants.backend);
 
 export const project = {
-projectId: constants.projectId
+ sdk,
+ projectId: constants.projectId
 };

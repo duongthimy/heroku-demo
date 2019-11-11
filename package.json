@@ -1,6 +1,9 @@
 {
     "name": "my-first-boilerpalate",
     "version": "0.1.0",
+    "engines": {
+        "node": "8.16.2"
+      },
     "private": true,
     "dependencies": {
         "@gooddata/gooddata-js": "^11.14.1",

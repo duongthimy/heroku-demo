@@ -20,10 +20,18 @@ const Home = () => {
     const visUri = `/gdc/md/${constants.projectId}/obj/75548`;
 
     return <Page>
+        <div style={{ height: 400, width: 700 }}>
+            <Visualization
+                    projectId= {constants.projectId}
+                    identifier = "aafEOWGSdxwv"
+                    //experimentalVisExecution={true} 
+            />
+        </div>
         <div style={{ height: 400 }} >
             <Visualization {...project} onExportReady={onExportReady} uri={visUri}/>
         </div>
         {exportState.data !== null ? <a download={exportState.data} href={exportState.data} >Download Export</a> : <p>Preparing export...</p>}
+
     </Page>;
 };
 

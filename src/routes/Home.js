@@ -24,8 +24,9 @@ const Home = () => {
     return (
         <Page>
             <div style={{ height: 400 }}>
-                <Visualization projectId="pwlmfx6b8cx0r4u5w4623o2dijug30p6" identifier="aafEOWGSdxwv" />
+                <Visualization {...project} uri={visUri} />
             </div>
+            {/* {exportState.data !== null ? <a download={exportState.data} href={exportState.data} >Download Export</a> : <p>Preparing export...</p>} */}
         </Page>
     );
 };
